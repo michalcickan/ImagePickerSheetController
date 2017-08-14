@@ -10,7 +10,7 @@ import UIKit
 
 class SheetPreviewCollectionViewCell: SheetCollectionViewCell {
     
-    var collectionView: PreviewCollectionView? {
+    weak var collectionView: PreviewCollectionView? {
         willSet {
             if let collectionView = collectionView {
                 collectionView.removeFromSuperview()
